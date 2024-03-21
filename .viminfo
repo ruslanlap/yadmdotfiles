@@ -1,0 +1,713 @@
+# Цей файл автоматично створений Vim 8.2.
+# Можете редагувати, але ОБЕРЕЖНО!
+
+# Viminfo version
+|1,4
+
+# Значення 'encoding' під час створення цього файлу
+*encoding=utf-8
+
+
+# hlsearch on (H) or off (h):
+~h
+# Ост. Зразок пошуку:
+~Msle0~/\<source\>
+
+# Попередні команди (від найновіших):
+:wq
+|2,0,1710330053,,"wq"
+:qa!
+|2,0,1709578581,,"qa!"
+:qa
+|2,0,1709578574,,"qa"
+:q!
+|2,0,1709199798,,"q!"
+:222
+|2,0,1709198294,,"222"
+:w
+|2,0,1709124725,,"w"
+:WQ
+|2,0,1709064340,,"WQ"
+:W
+|2,0,1709049762,,"W"
+:do
+|2,0,1708620010,,"do"
+:colorscheme catppuccin_macchiato
+|2,0,1708619936,,"colorscheme catppuccin_macchiato"
+:tree
+|2,0,1708619787,,"tree"
+:q
+|2,0,1708619711,,"q"
+:wiki
+|2,0,1708619693,,"wiki"
+:PlugInstall
+|2,0,1708619669,,"PlugInstall"
+:colorscheme catppuccin_mocha
+|2,0,1708619594,,"colorscheme catppuccin_mocha"
+:vifm
+|2,0,1708619584,,"vifm"
+:PlugStatus
+|2,0,1708619274,,"PlugStatus"
+:PlugUpdate
+|2,0,1708618647,,"PlugUpdate"
+:colorscheme ca
+|2,0,1708618192,,"colorscheme ca"
+:colorscheme catppuccin " catppuccin-mocha
+|2,0,1708618090,,"colorscheme catppuccin \" catppuccin-mocha"
+:colorscheme catppucin
+|2,0,1708617860,,"colorscheme catppucin"
+:plug
+|2,0,1708617636,,"plug"
+
+# Попередні шукані рядки (від найновіших):
+? \<source\>
+|2,1,1711046500,,"\\<source\\>"
+? \<typeset\>
+|2,1,1709050902,,"\\<typeset\\>"
+?/222
+|2,1,1709047384,47,"222"
+?/current di
+|2,1,1709045156,47,"current di"
+?/216
+|2,1,1709045128,47,"216"
+
+# Попередні вирази (від найновіших):
+
+# Попередні введені рядки (від найновіших):
+
+# Попередні Рядок налагодження (від найновіших):
+
+# Регістри:
+""1	LINE	0
+	#!/usr/bin/env bashgit clone --bare git@github.com:ruslanlap/dotfiles.git $HOME/.dotfiles# define config alias locally since the dotfiles
+	# aren't installed on the system yet
+	function config {
+	   git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $@
+	}# create a directory to backup existing dotfiles to
+	mkdir -p .dotfiles-backup
+	config checkout
+	if [ $? = 0 ]; then
+	  echo "Checked out dotfiles from git@github.com:ruslanlap/dotfiles.git";
+	  else
+	    echo "Moving existing dotfiles to ~/.dotfiles-backup";
+	    config checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | xargs -I{} mv {} .dotfiles-backup/{}
+	fi# checkout dotfiles from repo
+	config checkout
+	config config status.showUntrackedFiles no
+|3,1,1,1,15,0,1710332141,"#!/usr/bin/env bashgit clone --bare git@github.com:ruslanlap/dotfiles.git $HOME/.dotfiles# define config alias locally since the dotfiles","# aren't installed on the system yet","function config {","   git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $@","}# create a directory to backup existing dotfiles to","mkdir -p .dotfiles-backup","config checkout","if [ $? = 0 ]; then",>77
+|<"  echo \"Checked out dotfiles from git@github.com:ruslanlap/dotfiles.git\";","  else","    echo \"Moving existing dotfiles to ~/.dotfiles-backup\";","    config checkout 2>&1 | egrep \"\\s+\\.\" | awk {'print $1'} | xargs -I{} mv {} .dotfiles-backup/{}","fi# checkout dotfiles from repo","config checkout","config config status.showUntrackedFiles no"
+"2	LINE	0
+	
+	Windows Registry Editor Version 5.00
+|3,0,2,1,2,0,1709198539,"","Windows Registry Editor Version 5.00"
+"3	LINE	0
+	
+	[HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\Sessions\catppuccin-mocha]
+|3,0,3,1,2,0,1709198538,"","[HKEY_CURRENT_USER\\Software\\SimonTatham\\PuTTY\\Sessions\\catppuccin-mocha]"
+"4	LINE	0
+	"Colour0" = "189, 147, 249" 
+	"Colour1" = "205, 214, 244" 
+	"Colour2" = "69, 71, 90" 
+	"Colour3" = "88, 91, 112" 
+	"Colour4" = "243, 139, 168" 
+	"Colour5" = "243, 139, 168" 
+	"Colour6" = "166, 227, 161" 
+	"Colour7" = "166, 227, 161" 
+	"Colour8" = "249, 226, 175" 
+	"Colour9" = "249, 226, 175" 
+	"Colour10" = "137, 180, 250" 
+	"Colour11" = "137, 180, 250" 
+	"Colour12" = "245, 194, 231"
+	"Colour13" = "245, 194, 231" 
+	"Colour14" = "148, 226, 213"
+	"Colour15" = "148, 226, 213" 
+	"Colour16" = "186, 194, 222" 
+	"Colour17" = "166, 173, 200" 
+	
+|3,0,4,1,19,0,1709198499,"\"Colour0\" = \"189, 147, 249\" ","\"Colour1\" = \"205, 214, 244\" ","\"Colour2\" = \"69, 71, 90\" ","\"Colour3\" = \"88, 91, 112\" ","\"Colour4\" = \"243, 139, 168\" ","\"Colour5\" = \"243, 139, 168\" ","\"Colour6\" = \"166, 227, 161\" ","\"Colour7\" = \"166, 227, 161\" ","\"Colour8\" = \"249, 226, 175\" ","\"Colour9\" = \"249, 226, 175\" ","\"Colour10\" = \"137, 180, 250\" ","\"Colour11\" = \"137, 180, 250\" ",>34
+|<"\"Colour12\" = \"245, 194, 231\"","\"Colour13\" = \"245, 194, 231\" ","\"Colour14\" = \"148, 226, 213\"","\"Colour15\" = \"148, 226, 213\" ","\"Colour16\" = \"186, 194, 222\" ","\"Colour17\" = \"166, 173, 200\" ",""
+"5	LINE	0
+	# putty-catppuccin
+	
+	Here is a README file with instructions on how to use the Windows registry file to modify PuTTY color settings:
+	
+	## Screenshots
+	
+	![App Screenshot](https://github.com/ruslanlap/putty-catppuccin/blob/master/screenshoot.png)
+	
+	
+	# How to Modify PuTTY Color Settings to Cattpucin style
+	
+	This README provides instructions on how to use the included Windows registry (.reg) file to modify the color schemes in PuTTY.
+	
+	## Prerequisites
+	
+	- PuTTY installed on your Windows machine
+	- The Catp.reg registry file included in this repo
+	
+	
+	
+	## Installation
+	
+	Install 
+	
+	```bash
+	  cd C:\Users\$user\Downloads
+	```
+	```bash
+	  curl.exe -o Catp.reg https://github.com/ruslanlap/putty-catppuccin/blob/master/catp.reg
+	```
+	
+	## Instructions
+	
+	1. Download Catp.reg or copy it from this repo
+	
+	    
+	2. Double click on Catp.reg to open the Windows Registry Editor
+	3. Click Yes to merge the registry file into the Windows Registry
+	4. Open PuTTY and go to Window > Saved Seesion
+	5. Select the "Catp" scheme from the Saved sessions dropdown 
+	6. Click Openy to apply the color scheme
+	
+	And you're done! The next time you open an SSH session in PuTTY it will use the customized Catp color theme.
+	
+	Let me know if you have any other questions!
+	
+	## Demo
+	
+	Insert gif or link to demo
+	
+|3,0,5,1,50,0,1709136835,"# putty-catppuccin","","Here is a README file with instructions on how to use the Windows registry file to modify PuTTY color settings:","","## Screenshots","","![App Screenshot](https://github.com/ruslanlap/putty-catppuccin/blob/master/screenshoot.png)","","","# How to Modify PuTTY Color Settings to Cattpucin style","",>129
+|<"This README provides instructions on how to use the included Windows registry (.reg) file to modify the color schemes in PuTTY.","","## Prerequisites","","- PuTTY installed on your Windows machine","- The Catp.reg registry file included in this repo","","","","## Installation","","Install ","","```bash","  cd C:\\Users\\$user\\Downloads","```","```bash","  curl.exe -o Catp.reg https://github.com/ruslanlap/putty-catppuccin/blob/master/catp.reg","```","","## Instructions","",>48
+|<"1. Download Catp.reg or copy it from this repo","","    ","2. Double click on Catp.reg to open the Windows Registry Editor","3. Click Yes to merge the registry file into the Windows Registry","4. Open PuTTY and go to Window > Saved Seesion","5. Select the \"Catp\" scheme from the Saved sessions dropdown ","6. Click Openy to apply the color scheme","","And you're done! The next time you open an SSH session in PuTTY it will use the customized Catp color theme.","",>46
+|<"Let me know if you have any other questions!","","## Demo","","Insert gif or link to demo",""
+"6	LINE	0
+	
+	ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIONoI7rmKyX/kZ/MuJXV01TNBhMfbUBczvCyGSJYIBLe ucu\lapin@C1-NB515-02 d
+|3,0,6,1,2,0,1709123323,"","ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIONoI7rmKyX/kZ/MuJXV01TNBhMfbUBczvCyGSJYIBLe ucu\\lapin@C1-NB515-02 d"
+"7	LINE	0
+	541
+<b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW                                                  QyNTUxOQAAACDjaCO65isl/5GfzLiV1dNUzQYTH21AXM7wshkiWCAS3gAAAJj7Rmp3+0Zq                                                  dwAAAAtzc2gtZWQyNTUxOQAAACDjaCO65isl/5GfzLiV1dNUzQYTH21AXM7wshkiWCAS3g                                                  AAAEAE7Tf8XA8vMvg3N9hagTNj37tYP75nz0RBiaORsafNB+NoI7rmKyX/kZ/MuJXV01TN                                                  BhMfbUBczvCyGSJYIBLeAAAAFXVjdVxsYXBpbkBDMS1OQjUxNS0wMg==  
+|3,0,7,1,1,0,1709123295,>540
+|<"b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW                                                  QyNTUxOQAAACDjaCO65isl/5GfzLiV1dNUzQYTH21AXM7wshkiWCAS3gAAAJj7Rmp3+0Zq                                                  dwAAAAtzc2gtZWQyNTUxOQAAACDjaCO65isl/5GfzLiV1dNUzQYTH21AXM7wshkiWCAS3g                                                  AAAEAE7Tf8XA8vMvg3N9hagTNj37tYP75nz0RBiaORsafNB+NoI7rmKyX/kZ/MuJXV01TN                                                  BhMfbUBczv
+|<CyGSJYIBLeAAAAFXVjdVxsYXBpbkBDMS1OQjUxNS0wMg==  "
+"8	LINE	0
+	
+	400
+<ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCht1dZLkBjEibNAwIwk7CokZsON7n/GqsGGRzaMFCRel3h80CZL0QJbrcHmwZHXi4FBgpJiHUm4nzopjQDUh8nw6caA5VdnlaP8S97q7QqV3vnU+vnj0BFXj0Z6c+gYrZGh+OLQmj+i+K2sCOMcKKaQYvhw6jWPlftDf2cAyHVyneCLat1dAPjdlJ4Ax07nP8ePTmNS5P3C1avF+ivY18ZtmSYZGtXmybK7arbFgun2IcOuAFzjfYH8pq9dUfjZSQR4d5mgVru/DaB7RLVI9enxma0rge87zoo9r8dEpYS+F3jWXWwlLm9zzP9o9lZgvhJor0V/w5qyJWNlDoDfsy1 rsa-key-20240228
+|3,0,8,1,2,0,1709122787,"","ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCht1dZLkBjEibNAwIwk7CokZsON7n/GqsGGRzaMFCRel3h80CZL0QJbrcHmwZHXi4FBgpJiHUm4nzopjQDUh8nw6caA5VdnlaP8S97q7QqV3vnU+vnj0BFXj0Z6c+gYrZGh+OLQmj+i+K2sCOMcKKaQYvhw6jWPlftDf2cAyHVyneCLat1dAPjdlJ4Ax07nP8ePTmNS5P3C1avF+ivY18ZtmSYZGtXmybK7arbFgun2IcOuAFzjfYH8pq9dUfjZSQR4d5mgVru/DaB7RLVI9enxma0rge87zoo9r8dEpYS+F3jWXWwlLm9zzP9o9lZgvhJor0V/w5qyJWNlDoDfsy1 rsa-key-20240228"
+"9	CHAR	0
+	
+	sha-rsa AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBIAPEZxQzDht
+	XlLW9NkqW9hiyWQTNY3vLmXn7g/pmlaSbrBMSKq0yCvWff4zeRrrJq3nq53ooWAP
+	3KEdHEP2I2c=
+	
+|3,0,9,0,5,0,1709122774,"","sha-rsa AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBIAPEZxQzDht","XlLW9NkqW9hiyWQTNY3vLmXn7g/pmlaSbrBMSKq0yCvWff4zeRrrJq3nq53ooWAP","3KEdHEP2I2c=",""
+"-	CHAR	0
+	s
+|3,0,36,0,1,0,1709578545,"s"
+
+# Помітки:
+'0  101  0  ~/.zshrc
+|4,48,101,0,1711046724,"~/.zshrc"
+'1  90  0  ~/.zshrc
+|4,49,90,0,1711046515,"~/.zshrc"
+'2  90  0  ~/.zshrc
+|4,50,90,0,1711046515,"~/.zshrc"
+'3  21  0  ~/config
+|4,51,21,0,1710518464,"~/config"
+'4  34  0  ~/installzsh
+|4,52,34,0,1710340089,"~/installzsh"
+'5  20  76  ~/config-init
+|4,53,20,76,1710332375,"~/config-init"
+'6  31  0  ~/config-init
+|4,54,31,0,1710332151,"~/config-init"
+'7  31  0  ~/config-init
+|4,55,31,0,1710332151,"~/config-init"
+'8  1  57  ~/config-init
+|4,56,1,57,1710330203,"~/config-init"
+'9  9  57  ~/config-init
+|4,57,9,57,1710330203,"~/config-init"
+
+# Список переходів (від найновіших):
+-'  101  0  ~/.zshrc
+|4,39,101,0,1711046724,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1711046713,"~/.zshrc"
+-'  90  0  ~/.zshrc
+|4,39,90,0,1711046515,"~/.zshrc"
+-'  90  0  ~/.zshrc
+|4,39,90,0,1711046515,"~/.zshrc"
+-'  21  0  ~/.zshrc
+|4,39,21,0,1711046505,"~/.zshrc"
+-'  21  0  ~/.zshrc
+|4,39,21,0,1711046505,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1711046497,"~/.zshrc"
+-'  21  0  ~/config
+|4,39,21,0,1710518464,"~/config"
+-'  21  0  ~/config
+|4,39,21,0,1710518464,"~/config"
+-'  21  0  ~/config
+|4,39,21,0,1710518464,"~/config"
+-'  21  0  ~/config
+|4,39,21,0,1710518464,"~/config"
+-'  1  0  ~/config
+|4,39,1,0,1710518448,"~/config"
+-'  1  0  ~/config
+|4,39,1,0,1710518448,"~/config"
+-'  1  0  ~/config
+|4,39,1,0,1710518448,"~/config"
+-'  1  0  ~/config
+|4,39,1,0,1710518448,"~/config"
+-'  34  0  ~/installzsh
+|4,39,34,0,1710340089,"~/installzsh"
+-'  34  0  ~/installzsh
+|4,39,34,0,1710340089,"~/installzsh"
+-'  34  0  ~/installzsh
+|4,39,34,0,1710340089,"~/installzsh"
+-'  34  0  ~/installzsh
+|4,39,34,0,1710340089,"~/installzsh"
+-'  34  0  ~/installzsh
+|4,39,34,0,1710340089,"~/installzsh"
+-'  34  0  ~/installzsh
+|4,39,34,0,1710340089,"~/installzsh"
+-'  34  0  ~/installzsh
+|4,39,34,0,1710340089,"~/installzsh"
+-'  34  0  ~/installzsh
+|4,39,34,0,1710340089,"~/installzsh"
+-'  1  0  ~/installzsh
+|4,39,1,0,1710340063,"~/installzsh"
+-'  1  0  ~/installzsh
+|4,39,1,0,1710340063,"~/installzsh"
+-'  1  0  ~/installzsh
+|4,39,1,0,1710340063,"~/installzsh"
+-'  1  0  ~/installzsh
+|4,39,1,0,1710340063,"~/installzsh"
+-'  1  0  ~/installzsh
+|4,39,1,0,1710340063,"~/installzsh"
+-'  1  0  ~/installzsh
+|4,39,1,0,1710340063,"~/installzsh"
+-'  1  0  ~/installzsh
+|4,39,1,0,1710340063,"~/installzsh"
+-'  1  0  ~/installzsh
+|4,39,1,0,1710340063,"~/installzsh"
+-'  20  76  ~/config-init
+|4,39,20,76,1710332375,"~/config-init"
+-'  20  76  ~/config-init
+|4,39,20,76,1710332375,"~/config-init"
+-'  20  76  ~/config-init
+|4,39,20,76,1710332375,"~/config-init"
+-'  20  76  ~/config-init
+|4,39,20,76,1710332375,"~/config-init"
+-'  20  76  ~/config-init
+|4,39,20,76,1710332375,"~/config-init"
+-'  20  76  ~/config-init
+|4,39,20,76,1710332375,"~/config-init"
+-'  20  76  ~/config-init
+|4,39,20,76,1710332375,"~/config-init"
+-'  20  76  ~/config-init
+|4,39,20,76,1710332375,"~/config-init"
+-'  20  76  ~/config-init
+|4,39,20,76,1710332375,"~/config-init"
+-'  20  76  ~/config-init
+|4,39,20,76,1710332375,"~/config-init"
+-'  20  76  ~/config-init
+|4,39,20,76,1710332375,"~/config-init"
+-'  20  76  ~/config-init
+|4,39,20,76,1710332375,"~/config-init"
+-'  20  76  ~/config-init
+|4,39,20,76,1710332375,"~/config-init"
+-'  20  76  ~/config-init
+|4,39,20,76,1710332375,"~/config-init"
+-'  20  76  ~/config-init
+|4,39,20,76,1710332375,"~/config-init"
+-'  20  76  ~/config-init
+|4,39,20,76,1710332375,"~/config-init"
+-'  1  0  ~/config-init
+|4,39,1,0,1710332320,"~/config-init"
+-'  1  0  ~/config-init
+|4,39,1,0,1710332320,"~/config-init"
+-'  1  0  ~/config-init
+|4,39,1,0,1710332320,"~/config-init"
+-'  1  0  ~/config-init
+|4,39,1,0,1710332320,"~/config-init"
+-'  1  0  ~/config-init
+|4,39,1,0,1710332320,"~/config-init"
+-'  1  0  ~/config-init
+|4,39,1,0,1710332320,"~/config-init"
+-'  1  0  ~/config-init
+|4,39,1,0,1710332320,"~/config-init"
+-'  1  0  ~/config-init
+|4,39,1,0,1710332320,"~/config-init"
+-'  1  0  ~/config-init
+|4,39,1,0,1710332320,"~/config-init"
+-'  1  0  ~/config-init
+|4,39,1,0,1710332320,"~/config-init"
+-'  1  0  ~/config-init
+|4,39,1,0,1710332320,"~/config-init"
+-'  1  0  ~/config-init
+|4,39,1,0,1710332320,"~/config-init"
+-'  1  0  ~/config-init
+|4,39,1,0,1710332320,"~/config-init"
+-'  1  0  ~/config-init
+|4,39,1,0,1710332320,"~/config-init"
+-'  1  0  ~/config-init
+|4,39,1,0,1710332320,"~/config-init"
+-'  1  0  ~/config-init
+|4,39,1,0,1710332320,"~/config-init"
+-'  31  0  ~/config-init
+|4,39,31,0,1710332151,"~/config-init"
+-'  31  0  ~/config-init
+|4,39,31,0,1710332151,"~/config-init"
+-'  31  0  ~/config-init
+|4,39,31,0,1710332151,"~/config-init"
+-'  31  0  ~/config-init
+|4,39,31,0,1710332151,"~/config-init"
+-'  31  0  ~/config-init
+|4,39,31,0,1710332151,"~/config-init"
+-'  31  0  ~/config-init
+|4,39,31,0,1710332151,"~/config-init"
+-'  31  0  ~/config-init
+|4,39,31,0,1710332151,"~/config-init"
+-'  31  0  ~/config-init
+|4,39,31,0,1710332151,"~/config-init"
+-'  31  0  ~/config-init
+|4,39,31,0,1710332151,"~/config-init"
+-'  31  0  ~/config-init
+|4,39,31,0,1710332151,"~/config-init"
+-'  31  0  ~/config-init
+|4,39,31,0,1710332151,"~/config-init"
+-'  31  0  ~/config-init
+|4,39,31,0,1710332151,"~/config-init"
+-'  31  0  ~/config-init
+|4,39,31,0,1710332151,"~/config-init"
+-'  31  0  ~/config-init
+|4,39,31,0,1710332151,"~/config-init"
+-'  31  0  ~/config-init
+|4,39,31,0,1710332151,"~/config-init"
+-'  31  0  ~/config-init
+|4,39,31,0,1710332151,"~/config-init"
+-'  31  0  ~/config-init
+|4,39,31,0,1710332151,"~/config-init"
+-'  31  0  ~/config-init
+|4,39,31,0,1710332151,"~/config-init"
+-'  31  0  ~/config-init
+|4,39,31,0,1710332151,"~/config-init"
+-'  31  0  ~/config-init
+|4,39,31,0,1710332151,"~/config-init"
+-'  31  0  ~/config-init
+|4,39,31,0,1710332151,"~/config-init"
+-'  31  0  ~/config-init
+|4,39,31,0,1710332151,"~/config-init"
+-'  31  0  ~/config-init
+|4,39,31,0,1710332151,"~/config-init"
+-'  31  0  ~/config-init
+|4,39,31,0,1710332151,"~/config-init"
+-'  31  0  ~/config-init
+|4,39,31,0,1710332151,"~/config-init"
+-'  31  0  ~/config-init
+|4,39,31,0,1710332151,"~/config-init"
+-'  31  0  ~/config-init
+|4,39,31,0,1710332151,"~/config-init"
+-'  31  0  ~/config-init
+|4,39,31,0,1710332151,"~/config-init"
+-'  31  0  ~/config-init
+|4,39,31,0,1710332151,"~/config-init"
+-'  31  0  ~/config-init
+|4,39,31,0,1710332151,"~/config-init"
+-'  31  0  ~/config-init
+|4,39,31,0,1710332151,"~/config-init"
+-'  31  0  ~/config-init
+|4,39,31,0,1710332151,"~/config-init"
+-'  1  41  ~/config-init
+|4,39,1,41,1710332140,"~/config-init"
+-'  1  41  ~/config-init
+|4,39,1,41,1710332140,"~/config-init"
+-'  1  41  ~/config-init
+|4,39,1,41,1710332140,"~/config-init"
+-'  1  41  ~/config-init
+|4,39,1,41,1710332140,"~/config-init"
+-'  1  41  ~/config-init
+|4,39,1,41,1710332140,"~/config-init"
+
+# Попередні помітки в файлах (від найновіших):
+
+> ~/.zshrc
+	*	1711046720	0
+	"	101	0
+	^	90	1
+	.	90	1
+	+	11	0
+	+	4	0
+	+	10	11
+	+	10	22
+	+	10	0
+	+	8	0
+	+	5	35
+	+	6	0
+	+	151	1
+	+	90	1
+
+> ~/config
+	*	1710518460	0
+	"	21	0
+	^	25	0
+	.	24	42
+	+	24	42
+
+> ~/installzsh
+	*	1710340087	0
+	"	34	0
+	^	34	0
+	.	33	135
+	+	33	135
+
+> ~/config-init
+	*	1710332374	0
+	"	20	76
+	^	20	77
+	.	20	76
+	+	1	41
+	+	1	59
+	+	1	19
+	+	30	42
+	+	4	57
+	+	20	76
+
+> ~/.ssh/config
+	*	1709579224	0
+	"	1	10
+	^	1	11
+	.	1	11
+	+	3	14
+	+	2	25
+	+	1	11
+
+> /etc/ssh/ssh_config
+	*	1709578575	0
+	"	26	0
+	^	25	29
+	.	25	29
+	+	25	29
+
+> ~/putty-catppuccin/README.md
+	*	1709230330	0
+	"	48	24
+	^	48	25
+	.	48	24
+	+	43	0
+	+	44	0
+	+	60	0
+	+	61	0
+	+	44	29
+	+	45	0
+	+	46	7
+	+	47	20
+	+	59	3
+	+	56	35
+	+	44	30
+	+	48	24
+
+> ~/.p10k.zsh
+	*	1709199854	0
+	"	1	0
+	^	224	42
+	.	224	41
+	+	223	42
+	+	223	43
+	+	223	0
+	+	223	43
+	+	223	0
+	+	224	42
+	+	224	0
+	+	201	49
+	+	194	45
+	+	195	45
+	+	194	45
+	+	203	0
+	+	194	0
+	+	195	45
+	+	194	45
+	+	195	45
+	+	194	45
+	+	195	45
+	+	184	0
+	+	163	0
+	+	205	81
+	+	205	0
+	+	236	0
+	+	558	59
+	+	556	60
+	+	560	59
+	+	558	0
+	+	589	0
+	+	178	0
+	+	177	50
+	+	175	49
+	+	173	53
+	+	177	0
+	+	163	0
+	+	233	0
+	+	224	42
+	+	226	0
+	+	233	0
+	+	236	0
+	+	201	49
+	+	203	78
+	+	205	81
+	+	201	0
+	+	184	2
+	+	186	2
+	+	188	2
+	+	190	2
+	+	182	2
+	+	177	2
+	+	224	41
+
+> /usr/share/terminfo/p/putty-256color
+	*	1709199781	0
+	"	1	0
+
+> ~/putty-catpuccin/catp.reg
+	*	1709198554	0
+	"	5	0
+	^	5	1
+	.	5	0
+	+	4	0
+	+	28	0
+	+	4	1
+	+	7	0
+	+	5	0
+
+> ~/putty-catpuccin/README.md
+	*	1709136989	0
+	"	1	23
+	^	1	24
+	.	1	24
+	+	1	0
+	+	1	111
+	+	1	43
+	+	1	54
+	+	1	45
+	+	1	36
+	+	1	12
+	+	1	0
+	+	1	44
+	+	1	46
+	+	1	0
+	+	1	46
+	+	1	18
+	+	45	44
+	+	1	24
+
+> ~/.ssh/authorized_keys
+	*	1709136248	0
+	"	11	0
+	^	8	397
+	.	8	396
+	+	8	77
+	+	8	0
+	+	8	52
+	+	8	0
+	+	9	0
+	+	8	396
+
+> ~/.ssh/known_hosts
+	*	1709123778	0
+	"	15	79
+	^	15	80
+	.	15	80
+	+	12	12
+	+	12	7
+	+	12	0
+	+	12	396
+	+	12	0
+	+	13	397
+	+	16	538
+	+	16	0
+	+	15	103
+	+	16	103
+	+	16	0
+	+	21	56
+	+	21	55
+	+	15	80
+	+	21	55
+	+	15	80
+
+> ~/.ssh/id_rsa.pub
+	*	1709120583	0
+	"	4	182
+
+> ~/.bashrc
+	*	1709116219	0
+	"	131	0
+	^	131	0
+	.	130	35
+	+	126	50
+	+	130	35
+
+> ~/test
+	*	1708620166	0
+	"	7	30
+	.	8	0
+	+	7	6
+	+	7	12
+	+	7	17
+	+	7	28
+	+	7	37
+	+	8	0
+
+> ~/NERD_tree_tab_1
+	*	1708620156	0
+	"	45	16
+	.	1	0
+	+	1	0
+
+> ~/test.sh
+	*	1708619825	0
+	"	6	0
+
+> ~/.vimrc
+	*	1708619793	0
+	"	227	0
+	^	227	47
+	.	227	46
+	+	12	1
+	+	44	0
+	+	12	10
+	+	12	65
+	+	12	4
+	+	40	15
+	+	40	14
+	+	44	0
+	+	20	49
+	+	40	60
+	+	12	0
+	+	1	0
+	+	20	21
+	+	40	32
+	+	20	3
+	+	20	0
+	+	18	0
+	+	40	38
+	+	12	0
+	+	11	0
+	+	10	8
+	+	12	0
+	+	11	0
+	+	40	15
+	+	42	0
+	+	227	46
+
+> ~/.vim/autoload/plug.vim
+	*	1708619389	0
+	"	24	0
+
+> ~/.vim/test.sh
+	*	1708618998	0
+	"	13	1
+	^	13	3
+	.	13	2
+	+	6	0
+	+	13	2
